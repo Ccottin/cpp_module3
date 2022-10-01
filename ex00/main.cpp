@@ -24,7 +24,7 @@ int	main(void)
 	one.attack("Georges");
 	one.attack("Georges");
 	one.attack("Georges");
-	three = two;
+	three = one;
 	three.attack("Nothing");
 	two.takeDamage(11);
 	two.beRepaired(10);
