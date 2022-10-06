@@ -22,6 +22,8 @@ class ClapTrap {
 	void	takeDamage(unsigned int amount);
 	void	beRepaired(unsigned int amount);
 
+	static const unsigned int	hpLim = 10;
+
 	private :
 	
 	std::string	_name;
@@ -29,5 +31,6 @@ class ClapTrap {
 	unsigned int		_ep;
 	unsigned int		_dmg;
 };
+
 
 #endif

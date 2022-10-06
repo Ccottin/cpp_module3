@@ -1,31 +1,39 @@
 #include <iostream>
 #include <string>
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int	main(void)
 {
-	ClapTrap	one("Robert");
-	ClapTrap	two("Georges");
-	ClapTrap	three;
+	ScavTrap	one("Ichi");
+	ScavTrap	two("Ni");
+	ScavTrap	three;
+	ClapTrap	four("Go");
 
-	one.attack("Georges");
-	two.takeDamage(5);
-	two.beRepaired(7);
-	one.beRepaired(11);
-	two.attack("Robert");
-	one.takeDamage(0);
-	one.attack("Georges");
-	one.attack("Georges");
-	one.attack("Georges");
-	one.attack("Georges");
-	one.attack("Georges");
-	one.attack("Georges");
-	one.attack("Georges");
-	one.attack("Georges");
-	one.attack("Georges");
-	one.attack("Georges");
+	std::cout << "a basic " << four.getClassName() << " " 
+	<< four.getName() << " gets " << four.getHp() << " hp, "
+	<< four.getEp() << " ep and deals " << four.getDmg()
+	<< " damage points" << std::endl << std::endl;
+	
+	std::cout << "a basic " << one.getClassName() << " " 
+	<< one.getName() << " gets " << one.getHp() << " hp, "
+	<< one.getEp() << " ep and deals " << one.getDmg()
+	<< " damage points" << std::endl << std::endl;
+
+	one.attack("Ni");
+	two.takeDamage(20);
+	std::cout << "Ni hp = " << two.getHp() << std::endl;
+	std::cout << "ichi ep = " << one.getEp() << std::endl;
+	three.setName("San");
+	std::cout << three.getName() << std::endl;
+	std::cout << "San ep = " << three.getEp() << std::endl;
+	three.guardGate();
+	std::cout << "San ep = " << three.getEp() << std::endl;
+	three.guardGate();
+	std::cout << "San ep = " << three.getEp() << std::endl;
 	three = one;
-	three.attack("Nothing");
-	two.takeDamage(11);
-	two.beRepaired(10);
+	std::cout << three.getName() << " got " << three.getEp() 
+	<< " ep" << std::endl;
+	one.beRepaired(5000);
+	two.beRepaired(5000);
 }

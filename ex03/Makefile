@@ -6,13 +6,16 @@
 #    By: ccottin <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/03 12:16:24 by ccottin           #+#    #+#              #
-#    Updated: 2022/10/06 08:17:07 by ccottin          ###   ########.fr        #
+#    Updated: 2022/10/06 08:24:10 by ccottin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= ScavTrap
+# -Wshadow warns whenever a local variable or type declaration shadows	#
+# another variable, parameter, class member, etc.		  	#
 
-SRCS	= ClapTrap.cpp ScavTrap.cpp main.cpp
+NAME	= FragTrap
+
+SRCS	= FragTrap.cpp ClapTrap.cpp ScavTrap.cpp main.cpp
 
 CC	= c++
 
