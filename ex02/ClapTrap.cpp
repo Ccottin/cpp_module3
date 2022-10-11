@@ -6,7 +6,7 @@
 /*   By: ccottin <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 04:59:26 by ccottin           #+#    #+#             */
-/*   Updated: 2022/10/11 04:59:43 by ccottin          ###   ########.fr       */
+/*   Updated: 2022/10/11 23:20:46 by ccottin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,14 @@
 
 /* Constructors, destructors, operators */
 
-ClapTrap::ClapTrap(void) : _className("ClapTrap"),
-	_maxHp(10), _name("default"), _hp(10), _ep(10), _dmg(0) {
+ClapTrap::ClapTrap(void) : _className("ClapTrap"), _name("default"),
+	_maxHp(10), _hp(10), _ep(10), _dmg(0) {
 	std::cout << "Default constructor is summoning a default"
 	" ClapTrap " << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name) : _className("ClapTrap"),
-	_maxHp(10), _name(name), _hp(10), _ep(10), _dmg(0) {
+ClapTrap::ClapTrap(std::string name) : _className("ClapTrap"), _name(name),
+	_maxHp(10), _hp(10), _ep(10), _dmg(0) {
 	std::cout << "Default constructor is summoning ClapTrap " 
 	<< name << std::endl;
 }
