@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ccottin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/11 04:59:31 by ccottin           #+#    #+#             */
+/*   Updated: 2022/10/11 04:59:43 by ccottin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CLAPTRAP_HPP
 # define CLAPTRAP_HPP
 
@@ -32,11 +44,8 @@ class ClapTrap {
 	protected :
 
 	std::string	_className;
-	unsigned int		_maxHp;
-
-	private :
-	
 	std::string	_name;
+	unsigned int		_maxHp;
 	unsigned int		_hp;
 	unsigned int		_ep;
 	unsigned int		_dmg;

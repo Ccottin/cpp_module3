@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ccottin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/11 05:07:27 by ccottin           #+#    #+#             */
+/*   Updated: 2022/10/11 05:07:39 by ccottin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 #include <string>
 #include "ClapTrap.hpp"
@@ -7,7 +19,7 @@ int	main(void)
 {
 	ScavTrap	one("Ichi");
 	ScavTrap	two("Ni");
-	ScavTrap	three;
+	ScavTrap	three(one);
 	ClapTrap	four("Go");
 
 	std::cout << "a basic " << four.getClassName() << " " 
@@ -36,4 +48,5 @@ int	main(void)
 	<< " ep" << std::endl;
 	one.beRepaired(5000);
 	two.beRepaired(5000);
+	four.attack("himself");
 }

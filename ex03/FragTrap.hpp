@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ccottin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/11 05:00:38 by ccottin           #+#    #+#             */
+/*   Updated: 2022/10/11 05:00:40 by ccottin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FRAGTRAP_HPP
 # define FRAGTRAP_HPP
 
 # include <string>
 # include "ClapTrap.hpp"
 
-class FragTrap :virtual public ClapTrap {
+class FragTrap : public ClapTrap {
 
 	public :
 	

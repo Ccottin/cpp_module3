@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ccottin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/11 05:09:37 by ccottin           #+#    #+#             */
+/*   Updated: 2022/10/11 05:14:20 by ccottin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef DIAMONDTRAP_HPP
 # define DIAMONDTRAP_HPP
 
@@ -7,7 +19,7 @@
 
 class DiamondTrap : public FragTrap, public ScavTrap {
 
-    public :
+	public :
 	DiamondTrap(void) : ClapTrap(void), FragTrap(void), ScavTrap(void);
 	DiamondTrap(std::string _name) : ClapTrap(std::string name), FragTrap(void), ScavTrap(void);
 	DiamondTrap(DiamondTrap const &d);
@@ -20,15 +32,13 @@ class DiamondTrap : public FragTrap, public ScavTrap {
 	
 	std::string	_className;
 	using		FragTrap::_maxHp;
-
-    private :
-
-	std::string	_name;
-	std::string	_clap_name;
-	
 	using		FragTrap::_hp;
 	using		ScavTrap::_ep;
 	using		FragTrap::_dmg;
+
+	private :
+
+	std::string	_name;
 };
 
 #endif

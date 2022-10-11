@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ccottin <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/11 05:07:01 by ccottin           #+#    #+#             */
+/*   Updated: 2022/10/11 05:07:04 by ccottin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 #include <string>
 #include "ClapTrap.hpp"
@@ -8,7 +20,7 @@ int	main(void)
 	ClapTrap	two("Georges");
 	ClapTrap	three;
 
-two.takeDamage(11000);
+	two.takeDamage(11000);
 	std::cout <<"two hp = " << two.getHp() << std::endl;	
 	one.attack("Georges");
 	two.takeDamage(5);
